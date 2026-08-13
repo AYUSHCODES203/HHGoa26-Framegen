@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HHGOA FrameInGoa</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Header -->
+    <header class="card header-card">
+      <h1>HHGOA FrameInGoa</h1>
+      <p class="subtitle">GOA, INDIA · 28–31 OCT 2026 · LESS NOISE. MORE SIGNAL</p>
+    </header>
+
+    <!-- Name input -->
+    <div class="card name-card">
+      <label for="nameInput" class="name-label">Your name</label>
+      <input type="text" id="nameInput" class="name-input" placeholder="e.g. Ayush Pakhare" maxlength="40" />
+    </div>
+
+    <!-- Upload dropzone -->
+    <label for="fileInput" class="card dropzone" id="dropzone">
+      <span class="palm">🌴</span>
+      <span class="drop-title">Drop your photo</span>
+      <span class="drop-sub">TAP TO CHOOSE · JPG · PNG · HEIC</span>
+      <input type="file" id="fileInput" accept="image/*" hidden />
+    </label>
+
+    <!-- Poster preview -->
+    <div class="card poster-card">
+      <canvas id="posterCanvas"></canvas>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button id="downloadBtn" class="btn btn-download">Download</button>
+      <button id="shareBtn" class="btn btn-share">Share on X</button>
+    </div>
+
+    <p class="hint" id="hint"></p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
